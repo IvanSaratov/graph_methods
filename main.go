@@ -10,7 +10,7 @@ import (
 func main() {
 	g := graph.New(graph.IntHash)
 
-	// Создание обычного графа
+	//Создание обычного графа
 	_ = g.AddVertex(1)
 	_ = g.AddVertex(2)
 	_ = g.AddVertex(3)

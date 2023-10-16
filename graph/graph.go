@@ -8,6 +8,8 @@ type Graph[K comparable, T any] interface {
 
 	// Добавляет новую вершину
 	AddVertex(value T, options ...func(*VertexProperties)) error
+	// Возврашает нам вершину
+	Vertex(hash K) (T, error)
 	// Удаляет вершину
 	RemoveVertex(hash K) error
 	// Добавляет новую дугу
