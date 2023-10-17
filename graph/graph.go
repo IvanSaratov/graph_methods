@@ -67,6 +67,13 @@ type EdgeProperties struct {
 	Data       any
 }
 
+// Весы для графа
+func EdgeWeight(weight int) func(*EdgeProperties) {
+	return func(e *EdgeProperties) {
+		e.Weight = weight
+	}
+}
+
 // Обертка для преобразования K в T
 type Hash[K comparable, T any] func(T) K
 
