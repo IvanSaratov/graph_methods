@@ -80,7 +80,7 @@
 
 Изначальный граф:
 
-![](images/lab5/test.gv.svg)
+![](images/lab5/graph.png)
 
 [Код программы](lab5.go)
 
